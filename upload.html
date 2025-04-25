@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: black;
+        }
+        .html-form{
+            max-width: 350px;
+            margin: auto;
+            border-radius: 5px;
+            background: lightslategray;
+            padding: 40px;
+        }
+        input[type="file"],select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px silver;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"]{
+            width: 100%;
+            background: blue;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Result Analyser</title>
+</head>
+<body>
+     <h1 style="font-family: Georgia; text-align: center; -webkit-text-fill-color: black; font-size: 40px; background-color:grey">RESULT ANALYSER</h1>
+<div class="html-form">
+      <form method = "POST" enctype = "multipart/form-data">
+          <label for="Class">Choose the Class:</label>
+          <select name="Class" id="Class">
+              <option value="Grade 10">Grade 10</option>
+              <option value="Grade 12">Grade 12</option>
+          </select>
+          <br><label for="Function">Choose the Funtion:</label>
+          <select name="Function" id="Function">
+              <option value="Marksheet">Marksheet</option>
+              <option value="Subject Toppers">Subject Toppers</option>
+          </select>
+          <br><label for="mode">Funtion for:</label>
+          <select name="mode" id="mode">
+              <option value="Both">Both</option>
+              <option value="Dayscholar/Border">Dayscholar(or)Border</option>
+          </select>
+          <br>Please choose the File:<input type = "file" name = "file_name">
+          <br>Select Student's List:<input type = "file" name = "list_name">
+
+          <br><input type=submit value=Submit>
+      </form>
+</div>
+</body>
+</html>
